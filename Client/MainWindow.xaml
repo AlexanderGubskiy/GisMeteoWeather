@@ -1,0 +1,13 @@
+﻿<Window x:Class="Client.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Client"
+        mc:Ignorable="d"
+        Title="Погода в популярных городах России" Height="182.598" Width="479.178"  ResizeMode="NoResize" Loaded="Window_Loaded">
+    <Grid>
+        <ComboBox x:Name="cbxCities" HorizontalAlignment="Left" Margin="54,55,0,0" VerticalAlignment="Top" Width="120" Grid.ColumnSpan="2" SelectionChanged="CbxCities_SelectionChanged"/>
+        <Label x:Name="lWeather"  Content="Погода" HorizontalAlignment="Left" Margin="197,42,0,0" VerticalAlignment="Top" Height="42" Width="267"/>
+    </Grid>
+</Window>
