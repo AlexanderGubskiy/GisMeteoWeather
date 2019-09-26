@@ -170,7 +170,6 @@ namespace DBLayer
                     connection.Open();
                     object res = command.ExecuteScalar();
                     return res != null ? true : false;
-                    //return false;
                 }
                 finally
                 {
